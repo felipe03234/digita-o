@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ Copa do Mundo 2026</h1>
+            <p>Agenda Interativa dos Jogos</p>
+            <div class="nav-buttons">
+                <button id="prevMonth" class="nav-btn">← Anterior</button>
+                <span id="currentMonth"></span>
+                <button id="nextMonth" class="nav-btn">Próximo →</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="calendar-wrapper">
+                <div class="weekdays">
+                    <div class="weekday">Dom</div>
+                    <div class="weekday">Seg</div>
+                    <div class="weekday">Ter</div>
+                    <div class="weekday">Qua</div>
+                    <div class="weekday">Qui</div>
+                    <div class="weekday">Sex</div>
+                    <div class="weekday">Sáb</div>
+                </div>
+                <div class="calendar" id="calendar"></div>
+            </div>
+
+            <div class="games-info" id="gamesInfo">
+                <div class="no-selection">
+                    <p>👆 Clique em um dia para ver os jogos</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal para exibir jogos -->
+        <div id="gamesModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <div id="modalGames" class="games-list"></div>
+                <button id="openInGoogle" class="btn-primary">Abrir no Google</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
